@@ -1,8 +1,9 @@
-Feature: This feature ensures that the user can create a course successfully
+Feature: The user should be able to create new course
    
-   As a user i want to visit the quales app so that i can create a course
+    user should be able to create/add new course to the profile...
+      //Then the new course should be created 
 
-Scenario: Verify that a user can create a course successfully
-   Given  The user is on the quales landing page
-   When The user types in their correct username and password
-   When The user fills the course creation form
+Scenario: create new course
+   Given  The user is logged in and able to click the add course btn
+   When  The user fills in the appropriate data and clicks add course 
+   Then The user gets a verification that course was created successfully
